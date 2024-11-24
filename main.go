@@ -79,16 +79,3 @@ func CountOccurrences(searchPath, text, exclude string) int {
 	fmt.Printf("Total occurrences of '%s': %d\n", text, total)
 	return total
 }
-
-func main() {
-	if len(os.Args) < 3 {
-		fmt.Println("Usage: go run main.go <search_path> <text> <exclusion_list (comma separated)>")
-		return
-	}
-
-	searchPath := os.Args[1]
-	exclude := os.Args[2]
-	text := os.Args[3]
-
-	CountOccurrences(searchPath, text, exclude)
-}
