@@ -18,17 +18,17 @@ A simple, efficient tool to search for specific text occurrences within files in
 To use this tool in your Go project, install it via:
 
 ```bash
-go get github.com/<3cognito>/<gofind>
+go get github.com/3cognito/gofind
 ```
 
 Import the package into your project:
 
 ```go
-import "github.com/<3cognito>/<gofind>"
+import "github.com/3cognito/gofind"
 ```
 
 ### **As a CLI Tool**
-If you’ve built the CLI executable and published it, users can install it via:
+The cli executable can be installed like so:
 
 ```bash
 go install github.com/<3cognito>/<gofind>/cmd/gofind@latest
@@ -73,13 +73,7 @@ From the command line, you can run:
 mycli -text="search_term" -dir="/path/to/directory"
 ```
 
-This will output the total occurrences of `search_term` across all files in the specified directory.
-
----
-
-## Future Features
-- Parallel processing optimizations.
-- File type filtering (`.txt`, `.log`, etc.).
+This will output the total occurrences of `search_term` across all files in the specified directory except those with the extensions `.gitignore` and `.git`.
 
 ---
 
