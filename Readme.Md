@@ -1,6 +1,6 @@
 # gofind
 
-A simple, efficient tool to search for specific text occurrences within files in a directory. This tool can be used both as a **Go package** and a **CLI tool**.
+A simple, efficient tool to search for specific text occurrences within files in a directory. This tool can be used both as a **Go package**.
 
 ---
 
@@ -27,21 +27,6 @@ Import the package into your project:
 import "github.com/3cognito/gofind"
 ```
 
-### **As a CLI Tool**
-The cli executable can be installed like so:
-
-```bash
-go install github.com/<3cognito>/<gofind>/cmd/gofind@latest
-```
-
-Run the tool directly from the terminal:
-
-```bash
-gofind -text="search_term" -dir="/path/to/directory"
-```
-
----
-
 ## Usage
 
 ### **Package Example**
@@ -64,13 +49,6 @@ func main() {
 	fmt.Printf("Occurrences found: %d
 ", count)
 }
-```
-
-### **CLI Example**
-From the command line, you can run:
-
-```bash
-mycli -text="search_term" -dir="/path/to/directory"
 ```
 
 This will output the total occurrences of `search_term` across all files in the specified directory except those with the extensions `.gitignore` and `.git`.
