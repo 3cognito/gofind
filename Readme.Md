@@ -42,10 +42,7 @@ import (
 )
 
 func main() {
-	count, err := gofind.CountOccurrences("example.txt", "search_term", ".gitignore,.git")
-	if err != nil {
-		log.Fatal(err)
-	}
+	count := gofind.CountOccurrences("example.txt", "search_term", ".gitignore,.git")
 	fmt.Printf("Occurrences found: %d
 ", count)
 }
